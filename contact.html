@@ -6,6 +6,7 @@
   <title>Contact Me</title>
   <link rel="stylesheet" href="css/contact.css" />
 </head>
+
 <body>
 
   <header class="header">
@@ -21,44 +22,49 @@
     </nav>
   </header>
 
-<main class="contact-main">
-  <div class="contact-content">
-    <h1>Contact Me</h1>
-    <p class="contact-intro">
-      Available for safety roles, compliance support, or training.
-    </p>
+  <main class="contact-main">
+    <div class="contact-content">
+      
+      <h1>Contact Me</h1>
+      <p class="contact-intro">
+        Available for safety roles, compliance support, or training.
+      </p>
 
-    <div class="contact-grid">
-      <section class="contact-form-section">
-        <h2>Send a Message</h2>
+      <div class="contact-grid">
 
-        <form class="contact-form" id="contactForm">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
+        <section class="contact-form-section">
+          <h2>Send a Message</h2>
 
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
+          <div id="form-message"></div>
 
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
+          <form class="contact-form" id="contactForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
 
-          <button type="submit">Submit</button>
-        </form>
-        <div id="form-message"></div>
-      </section>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
 
-      <aside class="direct-contact">
-        <h2>Direct Contact</h2>
-        <p><a href="mailto:yourname@email.com">lonpierre25@gmail.com</a></p>
-        <p><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></p>
-      </aside>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+
+        <aside class="direct-contact">
+          <h2>Direct Contact</h2>
+          <p><a href="mailto:lonpierre25@gmail.com">lonpierre25@gmail.com</a></p>
+          <p><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></p>
+        </aside>
+
+      </div>
     </div>
-  </div>
-</main>
+  </main>
 
   <footer class="footer">
-    <P>lonpierre25@gmail.com | © 2026 Pierre Lono</P>
+    <p>lonpierre25@gmail.com | © 2026 Pierre Lono</p>
   </footer>
-<script type="module" src="js/contact.js"></script>
+  <script type="module" src="js/contact.js"></script>
+
 </body>
 </html>

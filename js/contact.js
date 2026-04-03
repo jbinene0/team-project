@@ -1,26 +1,48 @@
-console.log("JS IS RUNNING");
-
-document.getElementById("contactForm").addEventListener("submit", async function(e) {
+document.getElementById("contactForm").addEventListener("submit", async function (e) {
     e.preventDefault();
 
-    console.log("FORM SUBMITTED");
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+    const formMessage = document.getElementById("form-message");
+    const submitBtn = this.querySelector("button[type='submit']");
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
+    // Clear any previous message
+    formMessage.textContent = "";
+    formMessage.className = "";
 
-    const formData = { name, email, message };
-    localStorage.setItem("contactData", JSON.stringify(formData));
+    // Basic client-side validation
+    if (!name || !email || !message) {
+        formMessage.textContent = "Please fill in all fields before submitting.";
+        formMessage.className = "error";
+        return;
+    }
+
+    // Disable button while submitting
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Sending...";
 
     try {
-        const response = await fetch("./data/message.json");
-        const data = await response.json();
+        const response = await fetch("https://formspree.io/f/xeeprkkn", {
+            method: "POST",
+            headers: { "Content-Type": "application/json", "Accept": "application/json" },
+            body: JSON.stringify({ name, email, message })
+        });
 
-        document.getElementById("form-message").textContent = data.successMessage;
+        if (!response.ok) {
+            throw new Error("Submission failed.");
+        }
 
-        document.getElementById("contactForm").reset();
+        formMessage.textContent = "Thank you for contacting me! I will reach out to you as soon as possible.";
+        formMessage.className = "success";
+
+        this.reset();
 
     } catch (error) {
-        console.error("Error loading message:", error);
+        formMessage.textContent = "Something went wrong. Please email me directly at lonpierre25@gmail.com.";
+        formMessage.className = "error";
+    } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Submit";
     }
 });

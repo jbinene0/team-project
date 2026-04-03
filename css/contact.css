@@ -13,7 +13,7 @@ body {
     min-height: 100vh;
 }
 
-/* HEADER - SAME AS OTHER PAGES */
+/* HEADER */
 
 .header {
     background: #05261C;
@@ -150,6 +150,28 @@ body {
     background: #B89352;
 }
 
+.contact-form button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* FORM MESSAGE */
+
+#form-message {
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    min-height: 1.4em;
+}
+
+#form-message.success {
+    color: #A7F3D0;
+}
+
+#form-message.error {
+    color: #FCA5A5;
+}
+
 /* DIRECT CONTACT */
 
 .direct-contact {
@@ -171,7 +193,7 @@ body {
     color: #C9A96B;
 }
 
-/* FOOTER - SAME AS OTHER PAGES */
+/* FOOTER */
 
 .footer {
     background: #05261C;
@@ -232,10 +254,4 @@ body {
         width: 100%;
         max-width: 280px;
     }
-}
-
-#form-message {
-    margin-top: 20px;
-    color: #C9A96B;
-    font-weight: bold;
 }
