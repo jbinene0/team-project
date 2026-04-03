@@ -233,3 +233,9 @@ body {
         max-width: 280px;
     }
 }
+
+#form-message {
+    margin-top: 20px;
+    color: #C9A96B;
+    font-weight: bold;
+}
