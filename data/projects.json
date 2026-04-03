@@ -1,0 +1,64 @@
+{
+  "projects": [
+    {
+      "id": "hse-pcl-internship",
+      "title": "HSE PCL Internship",
+      "category": "Industry Experience",
+      "year": "2025",
+      "role": "HSE Intern",
+      "description": "Completed a hands-on internship with PCL Construction's Health, Safety & Environment division, supporting site safety officers across active construction projects. Gained direct exposure to hazard identification, incident reporting, and regulatory compliance in a fast-paced industrial environment.",
+      "highlights": [
+        "Conducted daily site inspections and documented findings using HSE reporting tools",
+        "Assisted in developing Job Hazard Analysis (JHA) reports for high-risk tasks",
+        "Participated in weekly safety meetings and toolbox talks with field crews",
+        "Supported incident investigation procedures and corrective action tracking"
+      ],
+      "tags": ["Construction Safety", "JHA", "Incident Reporting", "OSHA"]
+    },
+    {
+      "id": "academic-project",
+      "title": "Academic Project",
+      "category": "Education",
+      "year": "2024",
+      "role": "Lead Researcher",
+      "description": "Developed a comprehensive workplace safety program proposal as part of an upper-division occupational health course. The project involved researching existing safety frameworks, identifying gaps in a simulated manufacturing environment, and presenting a full compliance roadmap to faculty and peers.",
+      "highlights": [
+        "Researched and applied OSHA 29 CFR 1910 General Industry standards",
+        "Created a written Emergency Action Plan (EAP) and evacuation procedures",
+        "Designed training materials covering lockout/tagout and PPE requirements",
+        "Presented findings to a panel of faculty and received commendation for thoroughness"
+      ],
+      "tags": ["OSHA Standards", "EAP", "Lockout/Tagout", "PPE", "Research"]
+    },
+    {
+      "id": "industrial-hygiene",
+      "title": "Industrial Hygiene",
+      "category": "Assessment & Monitoring",
+      "year": "2024",
+      "role": "Hygiene Assessor",
+      "description": "Led an industrial hygiene assessment project focused on evaluating airborne contaminant exposure levels in a simulated manufacturing facility. Applied principles of anticipation, recognition, evaluation, and control (AREC) to identify health hazards and recommend engineering and administrative controls.",
+      "highlights": [
+        "Performed noise level monitoring and compared results against NIOSH/OSHA PELs",
+        "Assessed ventilation adequacy and identified areas of potential chemical overexposure",
+        "Recommended hierarchy-of-controls solutions including substitution and local exhaust ventilation",
+        "Compiled a formal hygiene report with quantitative exposure data and remediation timelines"
+      ],
+      "tags": ["Industrial Hygiene", "AREC", "Exposure Monitoring", "NIOSH", "Ventilation"]
+    },
+    {
+      "id": "safety-for-the-best",
+      "title": "Safety for the Best",
+      "category": "Community Initiative",
+      "year": "2024",
+      "role": "Program Coordinator",
+      "description": "Coordinated a community-focused safety awareness initiative aimed at promoting workplace safety literacy among young workers and underserved communities. The program included hands-on training sessions, informational resources, and partnerships with local organizations to extend reach and impact.",
+      "highlights": [
+        "Organized and facilitated four safety awareness workshops for 60+ participants",
+        "Developed accessible training materials covering basic hazard recognition and rights",
+        "Partnered with two local nonprofits to distribute PPE and safety guides",
+        "Received positive feedback with 95% of participants rating sessions as highly valuable"
+      ],
+      "tags": ["Community Outreach", "Training", "Hazard Recognition", "Program Coordination"]
+    }
+  ]
+}

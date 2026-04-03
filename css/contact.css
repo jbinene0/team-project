@@ -13,7 +13,6 @@ body {
     min-height: 100vh;
 }
 
-/* HEADER */
 
 .header {
     background: #05261C;
@@ -54,7 +53,6 @@ body {
     color: #A7F3D0;
 }
 
-/* CONTACT MAIN SECTION */
 
 .contact-main {
     flex: 1;
@@ -90,7 +88,6 @@ body {
     align-items: start;
 }
 
-/* FORM SECTION */
 
 .contact-form-section h2,
 .direct-contact h2 {
@@ -155,7 +152,6 @@ body {
     cursor: not-allowed;
 }
 
-/* FORM MESSAGE */
 
 #form-message {
     margin-bottom: 16px;
@@ -172,7 +168,6 @@ body {
     color: #FCA5A5;
 }
 
-/* DIRECT CONTACT */
 
 .direct-contact {
     padding-top: 4px;
@@ -193,7 +188,6 @@ body {
     color: #C9A96B;
 }
 
-/* FOOTER */
 
 .footer {
     background: #05261C;
@@ -202,7 +196,6 @@ body {
     padding: 20px;
 }
 
-/* RESPONSIVE */
 
 @media (max-width: 900px) {
     .contact-main {

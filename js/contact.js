@@ -7,18 +7,15 @@ document.getElementById("contactForm").addEventListener("submit", async function
     const formMessage = document.getElementById("form-message");
     const submitBtn = this.querySelector("button[type='submit']");
 
-    // Clear any previous message
     formMessage.textContent = "";
     formMessage.className = "";
 
-    // Basic client-side validation
     if (!name || !email || !message) {
         formMessage.textContent = "Please fill in all fields before submitting.";
         formMessage.className = "error";
         return;
     }
 
-    // Disable button while submitting
     submitBtn.disabled = true;
     submitBtn.textContent = "Sending...";
 

@@ -13,8 +13,6 @@ body {
     min-height: 100vh;
 }
 
-/* HEADER */
-
 .header {
     background: #05261C;
     color: white;
@@ -35,7 +33,6 @@ body {
     height: auto;
 }
 
-/* NAVIGATION */
 
 .nav-tabs {
     flex: 1;
@@ -55,7 +52,6 @@ body {
     color: #A7F3D0;
 }
 
-/* HERO */
 
 .hero {
     flex: 1;
@@ -80,7 +76,6 @@ body {
     line-height: 1.5;
 }
 
-/* FOOTER */
 
 .footer {
     background: #05261C;
@@ -89,7 +84,6 @@ body {
     padding: 20px;
 }
 
-/* MOBILE */
 
 @media (max-width: 768px) {
     .header {
