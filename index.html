@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pierre Lono Portfolio</title>
-  <link rel="stylesheet" href="css/home.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pierre Lono</title>
+  <link rel="stylesheet" href="css/index.css" />
 </head>
 
 <body>
 
-<header class="header">
+  <header class="header">
     <div class="logo-container">
-        <img src="images/image.png" alt="OSHA App Logo" class="logo">
+      <img src="images/image.png" alt="OSHA App Logo" class="logo" />
     </div>
-
     <nav class="nav-tabs">
-        <a href="index.html">Home</a>
-        <a href="aboutme.html">About Me</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="aboutme.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
     </nav>
-</header>
+  </header>
 
-<main class="hero">
-    <h1>Pierre Lono</h1>
-    <p>Occupational Safety and Health Administration Professional</p>
-</main>
+  <main class="hero">
+    <div class="particles" id="particles"></div>
+    <div class="hero-content">
+      <p id="greeting" class="greeting"></p>
+      <div class="hero-name" id="hero-name"></div>
+      <div class="underline-bar"></div>
+      <p class="hero-subtitle">Occupational Safety and Health Administration Professional</p>
+      <a href="contact.html" class="hero-btn">Get In Touch</a>
+    </div>
+  </main>
 
-<footer class="footer">
+  <footer class="footer">
     <p>lonpierre25@gmail.com | © 2026 Pierre Lono</p>
-</footer>
+  </footer>
+
+  <script type="module" src="js/index.js"></script>
 
 </body>
 </html>

@@ -13,7 +13,6 @@
     <div class="logo-container">
       <img src="images/image.png" alt="OSHA App Logo" class="logo" />
     </div>
-
     <nav class="nav-tabs">
       <a href="index.html">Home</a>
       <a href="aboutme.html">About Me</a>
@@ -30,6 +29,13 @@
         A selection of professional, academic, and community work in health, safety, and environmental compliance.
       </p>
 
+      <div class="filter-bar">
+        <label for="category-filter">Filter by category:</label>
+        <select id="category-filter" aria-label="Filter projects by category">
+          <option value="all">All Projects</option>
+        </select>
+      </div>
+
       <div id="projects-container">
         <p class="state-message">Loading projects...</p>
       </div>
@@ -38,7 +44,7 @@
   </main>
 
   <footer class="footer">
-    <p>lonpierre25@gmail.com | & copy; 2026 Pierre Lono</p>
+    <p>lonpierre25@gmail.com | © 2026 Pierre Lono</p>
   </footer>
 
   <script type="module" src="js/projects.js"></script>
