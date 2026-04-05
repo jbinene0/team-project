@@ -184,8 +184,6 @@ body {
     }
 }
 
-/* HAMBURGER MENU */
-
 .hamburger {
     display: none;
     align-items: center;
@@ -242,8 +240,6 @@ body {
 .hamburger.open .hamburger-label {
     color: #A7F3D0;
 }
-
-/* DROPDOWN NAV */
 
 @media (max-width: 768px) {
     .hamburger {

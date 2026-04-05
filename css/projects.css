@@ -13,8 +13,6 @@ body {
     min-height: 100vh;
 }
 
-/* HEADER */
-
 .header {
     background: #05261C;
     color: white;
@@ -54,7 +52,6 @@ body {
     color: #A7F3D0;
 }
 
-/* PROJECTS MAIN */
 
 .projects-main {
     flex: 1;
@@ -83,7 +80,6 @@ body {
     margin-bottom: 60px;
 }
 
-/* LOADING & ERROR STATES */
 
 .state-message {
     font-size: 1rem;
@@ -95,7 +91,6 @@ body {
     color: #FCA5A5;
 }
 
-/* PROJECT CARDS GRID */
 
 .projects-grid {
     display: grid;
@@ -169,7 +164,6 @@ body {
     letter-spacing: 0.04em;
 }
 
-/* FOOTER */
 
 .footer {
     background: #05261C;
@@ -178,7 +172,6 @@ body {
     padding: 20px;
 }
 
-/* RESPONSIVE */
 
 @media (max-width: 1000px) {
     .projects-grid {
@@ -238,7 +231,6 @@ body {
     }
 }
 
-/* DROPDOWN FILTER */
 
 .filter-bar {
     display: flex;
@@ -272,7 +264,6 @@ body {
     border-color: #C9A96B;
 }
 
-/* CSS ANIMATIONS */
 
 @keyframes fadeSlideUp {
     from {
@@ -290,7 +281,6 @@ body {
     animation: fadeSlideUp 0.5s ease forwards;
 }
 
-/* HAMBURGER MENU */
 
 .hamburger {
     display: none;
@@ -349,7 +339,6 @@ body {
     color: #A7F3D0;
 }
 
-/* DROPDOWN NAV */
 
 @media (max-width: 768px) {
     .hamburger {

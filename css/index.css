@@ -13,8 +13,6 @@ body {
     min-height: 100vh;
 }
 
-/* HEADER */
-
 .header {
     background: #05261C;
     color: white;
@@ -54,8 +52,6 @@ body {
     color: #A7F3D0;
 }
 
-/* HERO */
-
 .hero {
     flex: 1;
     background: #0D0F0E;
@@ -67,8 +63,6 @@ body {
     position: relative;
     overflow: hidden;
 }
-
-/* PARTICLES */
 
 .particles {
     position: absolute;
@@ -91,8 +85,6 @@ body {
     100% { opacity: 0; transform: translateY(-300px) scale(1.5); }
 }
 
-/* HERO CONTENT */
-
 .hero-content {
     position: relative;
     z-index: 1;
@@ -101,8 +93,6 @@ body {
     align-items: center;
     gap: 20px;
 }
-
-/* GREETING */
 
 .greeting {
     font-size: 0.9rem;
@@ -118,8 +108,6 @@ body {
 .greeting.visible {
     opacity: 1;
 }
-
-/* NAME — letters animate in one by one */
 
 .hero-name {
     font-size: 3.5rem;
@@ -143,8 +131,6 @@ body {
     }
 }
 
-/* GOLD UNDERLINE */
-
 .underline-bar {
     width: 0;
     height: 2px;
@@ -156,8 +142,6 @@ body {
     to { width: 220px; }
 }
 
-/* SUBTITLE */
-
 .hero-subtitle {
     font-size: 1.1rem;
     color: #D7D2C8;
@@ -166,8 +150,6 @@ body {
     opacity: 0;
     animation: fadeUp 0.7s ease 1.6s forwards;
 }
-
-/* BUTTON */
 
 .hero-btn {
     display: inline-block;
@@ -196,16 +178,12 @@ body {
     to   { opacity: 1; transform: translateY(0); }
 }
 
-/* FOOTER */
-
 .footer {
     background: #05261C;
     color: white;
     text-align: center;
     padding: 20px;
 }
-
-/* RESPONSIVE */
 
 @media (max-width: 768px) {
     .header {
@@ -225,8 +203,6 @@ body {
         font-size: 2.5rem;
     }
 }
-
-/* HAMBURGER MENU */
 
 .hamburger {
     display: none;
@@ -284,8 +260,6 @@ body {
 .hamburger.open .hamburger-label {
     color: #A7F3D0;
 }
-
-/* DROPDOWN NAV */
 
 @media (max-width: 768px) {
     .hamburger {
