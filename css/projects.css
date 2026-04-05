@@ -289,3 +289,112 @@ body {
     opacity: 0;
     animation: fadeSlideUp 0.5s ease forwards;
 }
+
+/* HAMBURGER MENU */
+
+.hamburger {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px 14px;
+    margin-left: auto;
+    transition: border-color 0.2s ease;
+    position: relative;
+}
+
+.hamburger:hover {
+    border-color: #A7F3D0;
+}
+
+.hamburger-label {
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hamburger-bars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.hamburger-bars span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: white;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger.open .hamburger-bars span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.open .hamburger-bars span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open .hamburger-bars span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+.hamburger.open .hamburger-label {
+    color: #A7F3D0;
+}
+
+/* DROPDOWN NAV */
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .header {
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 16px 20px;
+        min-height: auto;
+        position: relative;
+    }
+
+    .logo-container {
+        flex: 1;
+    }
+
+    .nav-tabs {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        background: #05261C;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-top: 2px solid #A7F3D0;
+        z-index: 999;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    .nav-tabs.open {
+        display: flex;
+    }
+
+    .nav-tabs a {
+        padding: 14px 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        font-size: 0.95rem;
+        text-align: left;
+        width: 100%;
+    }
+
+    .nav-tabs a:last-child {
+        border-bottom: none;
+    }
+}

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects</title>
-  <link rel="stylesheet" href="css/projects.css" />
+  <title>Project Detail</title>
+  <link rel="stylesheet" href="css/project-detail.css" />
 </head>
 
 <body>
@@ -13,6 +13,7 @@
     <div class="logo-container">
       <img src="images/image.png" alt="OSHA App Logo" class="logo" />
     </div>
+
     <nav class="nav-tabs">
       <a href="index.html">Home</a>
       <a href="aboutme.html">About Me</a>
@@ -30,25 +31,11 @@
     </button>
   </header>
 
-  <main class="projects-main">
-    <div class="projects-content">
-
-      <h1>Projects</h1>
-      <p class="projects-intro">
-        A selection of professional, academic, and community work in health, safety, and environmental compliance.
-      </p>
-
-      <div class="filter-bar">
-        <label for="category-filter">Filter by category:</label>
-        <select id="category-filter" aria-label="Filter projects by category">
-          <option value="all">All Projects</option>
-        </select>
+  <main class="detail-main">
+    <div class="detail-content">
+      <div id="detail-container">
+        <p class="state-message">Loading project...</p>
       </div>
-
-      <div id="projects-container">
-        <p class="state-message">Loading projects...</p>
-      </div>
-
     </div>
   </main>
 
@@ -56,7 +43,7 @@
     <p>lonpierre25@gmail.com | © 2026 Pierre Lono</p>
   </footer>
 
-  <script type="module" src="js/projects.js"></script>
+  <script type="module" src="js/project-detail.js"></script>
 
 </body>
 </html>

@@ -1,4 +1,6 @@
 // Returning visitor greeting
+import "./nav.js";
+
 const visitorName = localStorage.getItem("visitorName");
 const greetingEl = document.getElementById("greeting");
 if (visitorName) {

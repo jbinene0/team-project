@@ -1,3 +1,5 @@
+import "./nav.js";
+
 const container = document.getElementById("projects-container");
 const categoryFilter = document.getElementById("category-filter");
 
@@ -42,15 +44,28 @@ function populateDropdown(projects) {
         option.textContent = cat;
         categoryFilter.appendChild(option);
     });
+
+    // Restore saved category from sessionStorage
+    const savedCategory = sessionStorage.getItem("selectedCategory");
+    if (savedCategory) {
+        categoryFilter.value = savedCategory;
+    }
 }
 
-categoryFilter.addEventListener("change", () => {
+function filterAndRender() {
     const selected = categoryFilter.value;
+
+    // Save selection to sessionStorage
+    sessionStorage.setItem("selectedCategory", selected);
+
     const filtered = selected === "all"
         ? allProjects
         : allProjects.filter(p => p.category === selected);
+
     renderProjects(filtered);
-});
+}
+
+categoryFilter.addEventListener("change", filterAndRender);
 
 async function loadProjects() {
     try {
@@ -62,7 +77,7 @@ async function loadProjects() {
         allProjects = data.projects;
 
         populateDropdown(allProjects);
-        renderProjects(allProjects);
+        filterAndRender();
 
     } catch (error) {
         container.innerHTML = `<p class="state-message error">Could not load projects. Please try again later.</p>`;

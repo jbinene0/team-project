@@ -1,4 +1,5 @@
 // --- Validation helpers ---
+import "./nav.js";
 
 function showError(fieldId, message) {
     const field = document.getElementById(fieldId);
